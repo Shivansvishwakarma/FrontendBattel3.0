@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --color-arctic-powder:    #F1F6F4;
+  --color-mystic-mint:      #D9E8E2;
+  --color-forsythia:        #FFC801;
+  --color-deep-saffron:     #FF9932;
+  --color-nocturnal-exp:    #114C5A;
+  --color-oceanic-noir:     #172B36;
+}
+
+@theme {
+  --color-arctic-powder: #F1F6F4;
+  --color-mystic-mint: #D9E8E2;
+  --color-forsythia: #FFC801;
+  --color-deep-saffron: #FF9932;
+  --color-nocturnal-exp: #114C5A;
+  --color-oceanic-noir: #172B36;
+
+  --font-display: 'JetBrains Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-oceanic-noir);
+  color: var(--color-arctic-powder);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.transition-hover {
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-toggle {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-panel.is-open {
+  max-height: 500px;
+}
+
+.bento-node {
+  transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
