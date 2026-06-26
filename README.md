@@ -81,3 +81,28 @@ Annual billing applies a 20% multiplier. Currency conversion (INR, EUR) uses tar
 ---
 
 ## Project Structure
+src/
+
+├── components/
+
+│   ├── Navbar.tsx
+
+│   ├── Hero.tsx
+
+│   ├── Features.tsx       # Bento grid + accordion
+
+│   ├── Pricing.tsx        # Matrix pricing engine
+
+│   ├── SocialProof.tsx
+
+│   └── Footer.tsx
+
+├── lib/
+
+│   └── pricing.ts         # computePrice() + PRICING_MATRIX
+
+├── styles/
+
+│   └── globals.css        # CSS variables, keyframes
+
+└── App.tsx
