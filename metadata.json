@@ -1,6 +1,0 @@
-{
-  "name": "AetherFlux",
-  "description": "Premium next-generation AI data automation platform landing page with a matrix-driven pricing engine and responsive bento-to-accordion layout.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
